@@ -153,7 +153,7 @@ function ChucklePostAI(AI_option) {
       const title = document.title;
       
       try {
-        const response = await fetch('替换成你自己的后端接口', {
+        const response = await fetch('https://oneapi.xiongmaodaxia.online', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -233,7 +233,7 @@ function ChucklePostAI(AI_option) {
   }
 
   function runChucklePostAI() {
-    if (window.location.pathname.includes('posts')) {
+    if (window.location.pathname.includes('pandaai')) {
       const mainContainer = findMainArticleContainer();
       if (mainContainer) {
         insertAIDiv('#' + mainContainer.id);
@@ -260,7 +260,7 @@ function ChucklePostAI(AI_option) {
   }
 
   // 初始化时检查URL
-  if (window.location.pathname.includes('posts')) {
+  if (window.location.pathname.includes('pandaai')) {
     initChucklePostAI();
   }
 
@@ -270,7 +270,7 @@ function ChucklePostAI(AI_option) {
   const url = location.href;
     if (url !== lastUrl) {
       lastUrl = url;
-      if (window.location.pathname.includes('posts')) {
+      if (window.location.pathname.includes('pandaai')) {
         location.reload(); // 页面刷新
       }
     }
