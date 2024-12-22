@@ -153,7 +153,7 @@ function ChucklePostAI(AI_option) {
       const title = document.title;
       
       try {
-        const response = await fetch('https://oneapi.xiongmaodaxia.online', {
+        const response = await fetch('https://pandasumry.imladrisel.workers.dev', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
