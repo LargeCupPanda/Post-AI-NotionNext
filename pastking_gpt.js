@@ -153,7 +153,7 @@ function ChucklePostAI(AI_option) {
       const title = document.title;
       
       try {
-        const response = await fetch('https://pandasumry.imladrisel.workers.dev/', {
+        const response = await fetch('https://pandasumry.imladrisel.workers.dev/api/summary', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
